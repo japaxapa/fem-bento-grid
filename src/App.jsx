@@ -1,35 +1,90 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <main className="container">
+      <div className="card card-stars">
+        <h1>
+          Social Media <span>10x</span> <i>Faster</i> with AI
+        </h1>
+
+        <img
+          src="/assets/images/illustration-five-stars.webp"
+          alt="illustrtion of 5 stars"
+        />
+
+        <p>Over 4,000 5-star reviews</p>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+
+      <div className="card card-platforms">
+        <img
+          src="/assets/images/illustration-multiple-platforms.webp"
+          alt="illustrtion of mulitple platforms"
+        />
+
+        <h1>Manage multiple accounts and platforms.</h1>
+      </div>
+
+      <div className="card card-consistent">
+        <h1>Maintain a consistent posting schedule.</h1>
+        <img
+          src="/assets/images/illustration-consistent-schedule.webp"
+          alt="illustrtion of consistent schedule"
+        />
+      </div>
+
+      <div className="card card-schedule">
+        <h1>Schedule to social media.</h1>
+
+        <img
+          src="/assets/images/illustration-schedule-posts.webp"
+          alt="illustrtion of best time to post"
+        />
+
         <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+          Optimize post timings to publish content at the perfect time for your
+          audience.
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+
+      <div className="card card-followers">
+        <img
+          src="/assets/images/illustration-grow-followers.webp"
+          alt="illustrtion of followers growth"
+        />
+
+        <h1>Grow followers with non-stop content.</h1>
+      </div>
+
+      <div className="card card-audience">
+        <h1>&gt;56%</h1>
+        <p>faster audience growth</p>
+        <img
+          src="/assets/images/illustration-audience-growth.webp"
+          alt="illustrtion of audience growth"
+        />
+      </div>
+
+      <div className="card card-create">
+        <h1>
+          Create and schedule content <i>quicker.</i>
+        </h1>
+
+        <img
+          src="/assets/images/illustration-create-post.webp"
+          alt="illustrtion of create a post"
+        />
+      </div>
+
+      <div className="card card-ai">
+        <h1>Write your content using AI.</h1>
+        <img
+          src="/assets/images/illustration-ai-content.webp"
+          alt="illustrtion of ai content"
+        />
+      </div>
+    </main>
+  );
 }
 
-export default App
+export default App;
